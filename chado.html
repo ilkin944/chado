@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chado Tea&Lounge</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="chado.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-scroll">
+		<div class="container">
+			<div class="row ml-auto">
+				<div class="col-lg-12 collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+		    			<li class="nav-item">
+		       				<a class="nav-link text-light menu hvr-pulse-shrink" href="#home">Ana Səhifə</a>
+		    			</li>
+		   				<li class="nav-item">
+		      				<a class="nav-link text-light menu hvr-pulse-shrink" href="#about">Haqqımızda</a>
+		   				</li>
+		      			<li class="nav-item">
+		        			<a class="nav-link text-light menu hvr-pulse-shrink" href="#services">Xidmətlərimiz</a>
+		      				</li> 
+		      			<li class="nav-item">
+		        			<a class="nav-link text-light menu hvr-pulse-shrink" href="#reservation">Rezervasiya</a>
+		      			</li>
+		      		</ul>
+				</div>
+			</div>
+			<div class="row logo ml-auto mr-auto">
+				<div class="col-lg-12">
+					<a class="navbar-brand hvr-pulse-shrink" href="#">
+						<img class="w-100 h-100" id="chado-logo-white" src="logo-chado-white.png">
+					</a>
+					<div class="collapse-navbar-menu">
+				  		<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+					  	<label for="menu-icon"></label>
+					  	<nav class="nav"> 
+					  		<ul class="pt-5">
+					  			<li><a href="#home">Ana Səhifə</a></li>
+					  			<li><a href="#about">Haqqımızda</a></li>
+					  			<li><a href="#services">Xidmətlərimiz</a></li>
+					  			<li><a href="#reservation">Rezervasiya</a></li>
+					  			<li><a href="#galery">Qalerya</a></li>
+					  			<li><a href="#foodmenu">Menyu</a></li>
+					  			<li><a href="#contact">Əlaqə</a></li>
+					  			<li><a href="#signin">Daxil Ol</a></li>
+					  			<li><a href="#cart">Kart</a></li>
+					  		</ul>
+					  	</nav>
+				  </div>
+				</div>
+			</div>
+			<div class="row mr-auto">
+				<div class="col-lg-12 collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+		        			<a class="nav-link text-light menu hvr-pulse-shrink" href="#galery">Qalreya</a>
+		      			</li>
+		      			<li class="nav-item">
+		        			<a class="nav-link text-light menu hvr-pulse-shrink" href="#foodmenu">Menyu</a>
+		      			</li> 
+		      			<li class="nav-item">
+		        			<a class="nav-link text-light menu hvr-pulse-shrink" href="#reservation">Əlaqə</a>
+		      			</li>
+		      			<li class="nav-item">
+		        			<a class="nav-link text-light menu hvr-pulse-shrink" href="#">Daxil ol</a>
+		      			</li>
+		      			<li class="nav-item">
+					    	<a class="nav-link menu text-light" href="#" id="navbardrop">Sifarişləriniz</a>
+					    </li>
+      				</ul>
+				</div>
+			</div>
+		</div> 
+	</nav>
+	<div id="home">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters">
+				<div class="col-lg-12">
+					<div class="home-video">
+						<video autoplay muted loop id="myVideo">
+							<source src="chado-interior-video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+	<section id="about" class="about-section">
+		<div class="container">
+				<div class="row mb-4">
+					<div class="col-sm-12" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100" src="chef1.jpg">
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col-sm-12 col-md-6" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100" src="chado-tea-black.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 about-content hvr-shutter-in-vertical" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h2>ÇADO, Yapon Çay Mərasimini və ya Yapon çayının yolunu təsvir etmək üçün istifadə olunan sözdür. 'Cha' sözü Çin dilində çay və digər dillərdə bir çox çay deməkdir, 'Do' sözü yapon dilində bir araya gətirən yol və ya yol deməkdir və beləliklə 'Chado' yəni çay yolu ortaya çıxır.</h2>
+						<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div style="padding: 8em 2em;" class="col-sm-12 col-md-6 about-content hvr-shutter-in-vertical" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h2>Sizə bizim məkanımıza gələrək, Çado Special çayının dadına baxmağı tövsiyyə edirik. Həqiqətən bu çay növü bənzəri olmayan bir çaydır. Ətri, dadı, rəngi - bir sözlə mükəmməl çaydır. </h2>
+						<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100" src="chado-tea-grey.jpg">
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col-sm-12 col-md-6" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100" src="chado-interior.jpg">
+					</div>
+					<div style="padding: 6em;" class="col-md-6 col-sm-12 about-content hvr-shutter-in-vertical" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<h2>Bizim Çado çaylarımızı həm dostlarınızla terras mərtəbəsində, həm Playstation oynayaraq, həm də Karaoke də olarkən içə bilərsiniz</h2>
+						<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 mb-4 text-center" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<h1 class="text-light">Xidmətlərimiz</h1>	
+				</div>
+			</div>
+			<div class="row text-center mb-4 text-light">
+				<div class="col-sm-12 col-md-6 p-5 hvr-bounce-to-right" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+				</div>
+				<div class="col-sm-12 col-md-6 terrace-photo" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<img class="w-100" src="terrace.jpg">
+				</div>
+			</div>
+			<div class="row text-center mb-4 text-light">
+				<div class="col-sm-12 col-md-6 live-music-photo" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<img class="w-100" src="livemusic.jpg">
+				</div>
+				<div class="col-sm-12 col-md-6 p-5 hvr-bounce-to-left" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+				</div>
+			</div>
+			<div class="row text-center mb-4 text-light">
+				<div class="col-sm-12 col-md-6 p-5 hvr-bounce-to-right" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+				</div>
+				<div class="col-sm-12 col-md-6 playstation-photo" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<video autoplay muted loop class="ps-video">
+						<source src="playstation1.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div class="row text-center mb-4 text-light">
+				<div class="col-sm-12 col-md-6 karaoke-photo" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<img class="w-100" src="karaoke.jpg">
+				</div>
+				<div class="col-sm-12 col-md-6 p-5 hvr-bounce-to-left" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>
+				</div>
+			</div>
+			<div class="row text-center mb-4 text-light">
+				<div class="col-sm-12 col-md-6 p-5 hvr-bounce-to-right" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div class="social-accounts">
+							<a href="https://www.facebook.com/tealoungechado">
+								<i class="fab mx-2 mt-5 fa-facebook-f"></i>
+							</a>	
+							<a href="https://www.instagram.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-instagram"></i>
+							</a>	
+							<a href="https://www.twitter.com/chado_lounge">
+								<i class="fab mx-2 mt-5 fa-twitter"></i>
+							</a>	
+							<a href="https://www.youtube.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-youtube"></i>
+							</a>	
+							<a href="https://wa.me/994552476858">
+								<i class="fab mx-2 mt-5 fa-whatsapp"></i>
+							</a>	
+							<a href="https://www.telegram.com/chadolounge">
+								<i class="fab mx-2 mt-5 fa-telegram-plane"></i>
+							</a>	
+							<a href="tel:994552486858">
+								<i class="fas mx-2 mt-5 fa-phone-volume"></i>
+							</a>	
+						</div>					
+				</div>
+				<div class="col-sm-12 col-md-6 live-match-photo" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<img class="w-100" src="football.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="galery" class="p-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 text-center text-light mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<h1>Siz dəyərli müştərilərimizdən gələnlər</h1>
+				</div>
+			</div>
+				<div class="row" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+						<img class="w-100 border border-light" src="gallery/1.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+						<img class="w-100 border border-light" src="gallery/2.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 mb-4">
+						<img class="w-100 border border-light" src="gallery/3.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<div class="row">
+							<div class="col-lg-6">
+								<img class="w-100 mb-3 border border-light" src="gallery/4.jpg">
+							</div>
+							<div class="col-lg-6">
+								<img class="w-100 mb-3 border border-light" src="gallery/5.jpg">
+							</div>
+							<div class="col-lg-6">
+								<img class="w-100 mb-3 border border-light" src="gallery/6.jpg">
+							</div>
+							<div class="col-lg-6">
+								<img class="w-100 mb-3 border border-light" src="gallery/7.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<div class="row">
+							<div class="col-lg-12">
+								<img class="w-100 border border-light" src="gallery/8.jpg">
+								<img class="w-100 border border-light" src="gallery/10.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-8 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100 border border-light" src="gallery/9.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100 border border-light" src="gallery/11.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100 border border-light" src="gallery/12.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100 border border-light" src="gallery/13.jpg">
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+						<img class="w-100 border border-light" src="gallery/14.jpg">
+					</div>
+			</div>
+		</div>
+	</section>
+	<section id="foodmenu">
+		<div class="container">
+			<div class="row text-center justify-content-center text-light mb-4">
+				<h1>Bu günə özəl təamlar</h1>
+			</div>
+			<div class="row" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+			    <div class="col-md-12">
+			        <div class="slider ml-lg-5 ml-md-5 mt-5 py-lg-5">
+			    	    <div class="row">
+			              	<div class="col-md-4" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+			                	<div class="imgContainer ml-lg-n5 mt-lg-0 mt-md-0 ml-md-n5 mt-n5">
+			                  		<div class="image">
+			                    		<img class="food-image" src="menu/menu-items/seher-yemeyi.png">
+			                  		</div>
+			                  		<div class="image active">
+			                    		<img class="food-image"  src="menu/menu-items/karisikpide.jpg">
+			                  		</div>
+			                  		<div class="image">
+			                    		<img class="food-image"  src="menu/menu-items/spirtsiz-ananas-shake.jpg">
+			                  		</div>
+			                	</div>
+			              	</div>
+			              	<div class="col-md-8" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+			                <!-- slider -->
+			                <div id="productSlider" class="carousel slide carousel-fade pr-lg-5 py-lg-0 py-4" data-ride="carousel">
+			                  	<div class="carousel-inner">
+			                    	<div class="carousel-item">
+			                      		<div class="content">
+			                        		<div class="date">Səhər yeməyi - 1 nəfərlik</div>
+			                        		<div class="title">Omlet (pendirli,pomidorlu), Xiyar təzə, Ağ pendir, Holland pendiri, Bekond, Kolbasa Halal, Sosiska Halal, Zeytun, Bal, Meyvə cemi, Kərə yağı, Qaymaq, CHADO təndir çörəyi, Çay</div>
+			                        		<div class="desc">10</div>
+			                        		<div class="d-flex justify-content-center justify-content-lg-start">
+			                          			<button class="btn readMoreBtn">Karta əlavə et</button>
+			                        		</div>
+			                      		</div>
+			                    	</div>
+			                    	<div class="carousel-item active">
+			                      		<div class="content">
+			                        		<div class="date">Qarışıq Pide</div>
+			                        		<div class="title">Mozzarella pendiri,toyuq quş başı, can əti quş başı, sucuq</div>
+			                        		<div class="desc">10</div>
+			                        		<div class="d-flex justify-content-center justify-content-lg-start">
+			                          			<button class="btn readMoreBtn">Karta əlavə et</button>
+			                        		</div>
+			                      		</div>
+			                    	</div>
+			                    	<div class="carousel-item">
+			                      		<div class="content">
+			                        		<div class="date">Spirtsiz Ananas Shake</div>
+			                        		<div class="title">Təbii ananas fresh-i, pino kolda siropu, maxito siropu, mandarin siropu, Passion nighte siropu</div>
+			                        		<div class="desc">10</div>
+			                        		<div class="d-flex justify-content-center justify-content-lg-start">
+			                          			<button class="btn readMoreBtn">Karta əlavə et</button>
+			                        		</div>
+			                      		</div>
+			                    	</div>
+			                  	</div>
+			                  	<!-- indicators -->
+			                  	<ol class="carousel-indicators indicators">
+			                    	<li data-target="#productSlider" data-slide-to="0" class=""></li>
+			                    	<li data-target="#productSlider" data-slide-to="1" class="active"></li>
+			                    	<li data-target="#productSlider" data-slide-to="2" class=""></li>
+			                  	</ol>
+			                  	<!-- indicators -->
+			                	</div>
+			                	<!-- slider -->
+			              	</div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="row mx-5" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+				<div class="menu-list"></div>
+        	</div>
+		</div>
+	</section>
+	<section id="reservation">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 map" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6078.8455190066115!2d49.811393!3d40.37732200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3944efde58c43b3d!2sChado%20Lounge%20ES%20Club%20PS!5e0!3m2!1str!2sus!4v1590850150512!5m2!1str!2sus" frameborder="0" style="border:0; min-height: 400px;" class="w-100" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				<div class="col-xl-6 col-sm-12 contact" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+					<form>
+						<div class="form-group">
+					    	<label for="name">Adınız:</label>
+					      	<input type="text" class="form-control" id="name" placeholder="Adınız" name="name">
+					    </div>
+					    <div class="form-group">
+					    	<label for="surname">Soyadınız:</label>
+					      	<input type="text" class="form-control" id="surname" placeholder="Soyadınız" name="Surname">
+					    </div>
+					    <div class="form-group">
+					    	<label for="email">Email:</label>
+					      	<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					    </div>
+					    <div class="form-group">
+					      	<label for="number">Əlaqə nömrəniz:</label>
+					      	<input type="number" class="form-control" id="number" placeholder="Nömrənizi daxil edin. Məs:994 XX XXX XX XX" name="nmbr">
+					    </div>
+					    	<button type="submit" class="btn btn-primary">Rezervasiya etmək istəyirəm!</button>
+					    	<button type="submit" class="btn btn-primary">Məlumat almaq istəyirəm!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+			<div class="progress-wrap">
+				<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+					<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+				</svg>
+			</div>
+		<div class="p-0 cart shopping-cart">
+			<div class="container-fluid p-0">
+				<div class="row w-100 bg-dark no-gutters">
+					<div class="col-sm-12">
+						<div class="card-header bg-dark text-light">
+							<h2 class="h2" style="float: left;">Sifarişləriniz</h1>
+							<div class="close-button">
+								<input type="checkbox" class="cart-icon" id="cart-icon" name="cart-icon">
+								<label for="cart-icon"></label>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="row w-100 bg-dark no-gutters">
+					<div class="col-sm-12">
+						<div class="card-body"></div>
+					</div>
+				</div>
+				<div class="row w-100 bg-dark no-gutters">
+					<div class="col-sm-12">
+						<div class="pull-right">
+							<p class="text-light ml-3" id="sum">Yekun mebleg: <span class="text-light cem"></span> Manat</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h6 style="text-align: center;"><strong>Bu sayt Ilkin944 tərəfindən yaradıldı </strong></h6>
+				</div>
+				<div class="col-sm-4 ilkin-social">
+					<a href="https://www.instagram.com/ilkin944/"><i class="fab fa-instagram"></i></a>	
+					<a href="https://www.facebook.com/ilkin944/"><i class="fab fa-facebook-square"></i></a>	
+					<a href="https://www.linkedin.com/ilkin944/"><i class="fab fa-linkedin"></i></a>
+					<a href=""><i class="fas fa-envelope-open"></i></a>
+					<a href="https://wa.me/994559443382?text=Salam"><i class="fab fa-whatsapp-square"></i></a>
+					<a href="+994 70 944 33 82"><i class="fab fa-telegram-plane"></i></a>
+				</div>
+				<div class="col-sm-4">
+					<h6 style="text-align: center;">Butun huquqlar qorunur</h6>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="chado.js"></script>
+</body>
+</html>
